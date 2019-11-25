@@ -8,6 +8,15 @@
 ; ======================================
 */
 
+// start program
 
+/*
+    Expected output:
 
+    Hello World statement
+*/
+
+//output
 console.log("Hello World, my name is Johnny Kobyluck");
+
+//end program
