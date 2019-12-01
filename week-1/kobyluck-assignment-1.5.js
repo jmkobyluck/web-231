@@ -3,7 +3,8 @@
 ; Author: Professor Krasso
 ; Date; 25 November 2019
 ; Modified By: Jonathan Kobyluck
-; Description: 
+; Description: Creating output of 3 
+; employee cards using JavScript
 ; ======================================
 */
 
