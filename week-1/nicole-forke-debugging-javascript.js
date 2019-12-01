@@ -21,6 +21,6 @@
  	var y = 10;  // removed quotations because there's no reason to have quotes with a single variable
  	var z = x + y;
  	 
- 	console.log(z); // "console" was spelled wrong, preventing the output from being displayed
+ 	console.log(z); // "console" was spelled wrong, preventing the output from being displayed.
  	 
  	//End program
