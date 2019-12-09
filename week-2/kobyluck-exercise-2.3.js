@@ -21,11 +21,7 @@ console.log(header.display('Johnny', 'Kobyluck', 'Kobyluck Exercise 2.3'));
   FirstName LastName
   Exercise 2.3
   Today's Date
-
   Hello Johnny Kobyluck!
-
-  Hint: Use your personal header display function and
-  refer to page 178 for implementing function properties
 */
 
 // Function property definition
@@ -34,7 +30,7 @@ myName.johnny = "Johnny Kobyluck!";
 // Returning the value assigned to the function property
 function myName() {
   return myName.johnny;
-}
+};
 
 // Output
 // Calling the console log to display my formatted function
