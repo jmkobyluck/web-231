@@ -33,6 +33,8 @@ console.log("")
 var age = 20
 
 
+// Start program
+
 // If statement that determines drinking
 // eligibility based on declared age
 if (age < 21) {
@@ -44,3 +46,5 @@ if (age < 21) {
 } else {
   console log('Back to the real world..');
 }
+
+// End program
