@@ -14,6 +14,8 @@ const header = require('../week-2/kobyluck-header.js');
 // Calling the console log function to display my header
 console.log(header.display('Johnny', 'Kobyluck', 'Assignment 3.1'));
 
+// start program
+
 /*
   Expected output:
 
@@ -32,19 +34,16 @@ console.log("")
 // Change the age to explore other outputs
 var age = 20
 
-
-// Start program
-
 // If statement that determines drinking
 // eligibility based on declared age
 if (age < 21) {
-  console.log('You can't drink');
+  console.log('You can\'t drink');
 // "Equal" else statement with different output
 } else if (age == 21) {
-  console.log('PARTY TIME!'};
+  console.log('PARTY TIME!');
 // Else statement with a different output
 } else {
-  console log('Back to the real world..');
+  console.log('Back to the real world..');
 }
 
-// End program
+// end program
