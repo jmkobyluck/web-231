@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Kobyluck Assignment 3.3
+; Title:  Kobyluck Exercise 3.3
 ; Author: Professor Krasso
 ; Date:   13 December 2019
 ; Modified By: Jonathan Kobyluck
