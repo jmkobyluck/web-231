@@ -45,3 +45,4 @@ colors.reverse;
 // displaying my "Expected Output".
 console.log("The rainbow backwards is " + colors +".");
 
+// end program
