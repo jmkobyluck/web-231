@@ -1,7 +1,7 @@
 /*
 ============================================
 ; Title:  Kobyluck Discussion 4.1
-; Author: Professor Krasso
+; Author: Jonathan Kobyluck
 ; Date:   19 December 2019
 ; Modified By: Jonathan Kobyluck
 ; Description: Arrays
