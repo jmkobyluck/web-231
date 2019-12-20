@@ -2,7 +2,7 @@
 ============================================
 ; Title:  Kobyluck Exercise 4.2
 ; Author: Professor Krasso
-; Date:   19 December 2019
+; Date:   20 December 2019
 ; Modified By: Jonathan Kobyluck
 ; Description: Arrays Exercise
 ;===========================================
@@ -12,7 +12,7 @@
 const header = require('../week-2/kobyluck-header.js');
 
 // Calling the console log function to display my header
-console.log(header.display('Johnny', 'Kobyluck', 'Discussion 4.1'));
+console.log(header.display('Johnny', 'Kobyluck', 'Exercise 4.2'));
 
 // Line break
 console.log("");
