@@ -2,7 +2,7 @@
 ============================================
 ; Title:  Kobyluck Exercise 5.2
 ; Author: Professor Krasso
-; Date:   9 Janurary 2020
+; Date:   11 Janurary 2020
 ; Modified By: Jonathan Kobyluck
 ; Description: ES5 Built-in Functions
 ;===========================================
