@@ -43,3 +43,5 @@ food.forEach(function(foods) {
   // output
   console.log(foods);
 });
+
+// end program
