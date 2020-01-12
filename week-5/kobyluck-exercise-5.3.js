@@ -67,7 +67,7 @@ var composer = [
     genre: "Classical",
     rating: 5
   }
-]
+];
 
 // passing "composers" function through ES5 "forEach" outputting "composer string"
 composer.forEach(function(composers) {
