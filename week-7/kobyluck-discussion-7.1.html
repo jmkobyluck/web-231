@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Adding2Numbers</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script>
+  // function to calculate 2 values
+  function calculate() {
+
+    // declaring my to value variables
+    var xId = document.getElementById("fieldX");
+    var yId = document.getElementById("fieldY");
+
+    //
+    var result = parseFloat(xId) + parseFloat(yId);
+
+    if(!isNaN(result)) {
+      document.getElementById("answer")= "The answer is " + result;
+    }
+  }
+
+  </script>
+</head>
+<body>
+  <h1>ADDITION</h1>
+  <h3>X</h3>
+  <input type="text" id="fieldX"></input>
+  <h3>+Y</h3>
+  <input type="text" id="fieldY"></input>
+  <button onclick="calculate()">Calculate</button>
+  <h1 id="answer"></h1>
+</body>
+</html>
