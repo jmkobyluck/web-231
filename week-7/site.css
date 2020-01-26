@@ -1,0 +1,20 @@
+tr:nth-child(even) {
+  background-color: #B3CBE5;
+  border-style: solid;
+  border: 3px;
+  border-color: #EDEFEE;
+}
+
+th {
+  background-color: #4886B9;
+  color: white;
+  border-style: solid;
+  border: 3px;
+  border-color: #EDEFEE;
+}
+
+table {
+  border-style: solid;
+  border: 1px;
+  border-color: #EDEFEE;
+}
