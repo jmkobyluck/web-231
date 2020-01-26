@@ -2,9 +2,9 @@
 ============================================
 ; Title:  Kobyluck Exercise 7.2
 ; Author: Professor Krasso
-; Date:   20 January 2020
+; Date:   26 January 2020
 ; Modified By: Jonathan Kobyluck
-; Description: Nested Object Literals
+; Description: Constructor Functions
 ;===========================================
 */
 
