@@ -17,4 +17,10 @@ table {
   border-style: solid;
   border: 1px;
   border-color: #EDEFEE;
+  text-align: left;
+}
+
+td {
+  padding: 4px;
+  margin-left: 2px;
 }
