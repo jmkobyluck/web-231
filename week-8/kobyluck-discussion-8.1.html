@@ -1,0 +1,74 @@
+<!--/*
+============================================
+; Title:  Kobyluck Discussion 8.1
+; Author: Jonathan Koblyuck
+; Date:   30 January 2020
+; Modified By: Jonathan Kobyluck
+; Description: DOM Manipulation (jQuery)
+;===========================================
+*/
+
+// start program
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .boxes {
+      padding: 1em;
+      margin: 2em;
+      font-weight: 600;
+      border-style: groove;
+      max-width: 8em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- heading -->
+  <div>
+    <h1>Click Each Box</h1>
+  </div>
+
+  <!-- div boxes -->
+  <div class="boxes" id="box1">
+    <h2>RED</h2>
+  </div>
+
+  <div class="boxes" id="box2">
+    <h2>BLUE</h2>
+  </div>
+
+  <div class="boxes" id="box3">
+    <h2>YELLOW</h2>
+  </div>
+
+  <script src="../jquery-3.4.1.min.js"></script>
+
+  <script>
+
+    // changes color of text using an onclick event
+    $(function() {
+      $('.boxes').on('click', function() {
+        $('#box1').toggle().css({color:'red'});
+      });
+
+      $('.boxes').on('click', function() {
+        $('#box2').toggle().css({color:'blue'});
+      });
+
+      $('.boxes').on('click', function() {
+        $('#box3').toggle().css({color:'yellow'});
+      });
+    });
+
+  </script>
+</body>
+</html>
