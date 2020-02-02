@@ -1,0 +1,101 @@
+<!--/*
+============================================
+; Title:  Kobyluck Exercise 8.3
+; Author: Professor Krasso
+; Date:   2 February 2020
+; Modified By: Jonathan Kobyluck
+; Description: jQuery
+;===========================================
+*/
+
+// start program
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="../site.css">
+
+  <style>
+    h2, p, button, table {
+      font-family: Roboto;
+      margin-left: 20px;
+    }
+
+    #bar {
+      background-color: darkcyan;
+      padding: 20px;
+      margin: 0 0 20px 0;
+    }
+
+    button {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="bar"></div>
+
+  <h2>Lorem Ipsum</h2>
+
+  <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non urna eget tellus molestie condimentum eu sed enim. Ut sit amet mi est. Donec mauris ante, vulputate ac augue non, varius sagittis lorem. Morbi nec dolor at urna commodo porta nec eget urna. Curabitur posuere, metus ut fringilla gravida, nulla libero fringilla augue, a elementum augue dolor vel urna. Nulla purus felis, elementum eget massa at, condimentum posuere risus. Curabitur nec faucibus sem. Nunc posuere neque egestas molestie vestibulum. Suspendisse eu consectetur nibh, non aliquam ligula. Ut at sagittis felis, ac rhoncus nulla. Suspendisse eu bibendum ipsum, quis porta lacus.</p>
+
+  <button type="button" id="button">Toggle</button>
+
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Type</th>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">1</a></td>
+      <td>Kiwi</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">2</a></td>
+      <td>Strawberry</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">3</a></td>
+      <td>Mango</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">4</a></td>
+      <td>Grapefruit</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="fruitId">5</a></td>
+      <td>Tangerine</td>
+    </tr>
+  </table>
+
+<script type="text/javascript">
+
+// button click function to toggle "p"
+$(function() {
+    $("button").click(function(){
+      $("p").toggle();
+    });
+  });
+
+// click function to alert fruit id and types
+$(function(){
+  $(".fruitId").click(function(event) {
+    event.preventDefault();
+    var fruitId = $(this).text();
+    var fruitType = $(this).closest("td").next().text();
+    alert("{fruitId: " + fruitId + ", fruitType: " + fruitType + "}");
+  });
+});
+</script>
+
+</body>
+</html>
