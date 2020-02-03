@@ -1,0 +1,87 @@
+<!--/*
+============================================
+; Title:  Kobyluck Assignment 8.4
+; Author: Professor Krasso
+; Date:   2 February 2020
+; Modified By: Jonathan Kobyluck
+; Description: Putting it all together
+;===========================================
+*/
+
+// start program
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="../site.css">
+
+  <style type="text/css">
+    #emps tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+
+<div id="emps"></div>
+
+<script type="text/javascript">
+
+  // employeeSet object constructor
+  function employeeSet(id, firstName, lastName, title) {
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.title = title;
+  }
+
+  // array inputing values from object constructor
+  var employees = [
+    new employeeSet('1', 'Tony', 'Stark', 'Iron Man'),
+    new employeeSet('2', 'Steve', 'Rogers', 'Captain America'),
+    new employeeSet('3', 'Bruce', 'Banner', 'Hulk'),
+    new employeeSet('4', 'Peter', 'Parker', 'Spiderman'),
+    new employeeSet('5', 'Clint', 'Barton', 'Hawkeye')
+  ]
+
+  // using getEmployee function to set the alert
+  function getEmployee(id) {
+    employees.forEach(function(employee) {
+      if (id === employee.id) {
+        alert(employee.id + ' ' + employee.firstName + ' ' + employee.lastName + ' ' + employee.title);
+      }
+    });
+  }
+
+  // output constructing th employee table and data
+  var output = "<table><thead<tr><th>Id</th><th>First Name</th><th>Last Name</th><th>Title</th></tr></thead>"
+    for (var x = 0; x < employees.length; x++) {
+      output += "<tr><td class='table tr'>" + employees[x].id + "</td><td>" + employees[x].firstName + "</td><td>" + employees[x].lastName + "</td><td>" + employees[x].title + "</td></tr>";
+    }
+  "</table>"
+
+  document.getElementById('emps').innerHTML = output;
+
+  // jQuery onClick event
+  // onClick event for each employee info
+  // Don't remove this, just add your code to the body of the event (curly braces)
+  $(function () {
+    $("table tr").click(function () {
+      var selectEmployee = $(this).find('td:first').html();
+      getEmployee(selectEmployee);
+    });
+  });
+
+</script>
+</body>
+</html>
+
+<!-- end program -->
